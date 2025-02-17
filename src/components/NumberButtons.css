@@ -1,0 +1,32 @@
+/* NumberButtons.css */
+.number-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.number-buttons button {
+    background: #049DD7;
+    color: white;
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    padding: 10px;
+}
+
+.number-buttons button:hover {
+    background: #C53F83;
+}
+
+.number-buttons button.selected {
+    background: #C53F83;
+    border: 3px solid #C53F83;
+}

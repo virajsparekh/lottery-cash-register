@@ -1,0 +1,46 @@
+/* MoneyButtons.css */
+.money-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  /* .money-buttons button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .money-buttons button:hover {
+    background-color: #e0e0e0;
+  } */
+
+  
+
+
+  .money-buttons button {
+    background: #4caf50; /* Green color */
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin: 5px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .money-buttons button:hover {
+    background: #45a049; /* Darker green on hover */
+  }
+  
+  .money-buttons button:active {
+    transform: scale(0.95);
+  }

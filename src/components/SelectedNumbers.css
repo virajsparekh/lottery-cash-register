@@ -1,0 +1,27 @@
+/* SelectedNumbers.css */
+.selected-numbers {
+    background: rgba(142, 36, 170, 0.9);
+    padding: 20px;
+    width: 280px;
+    border-radius: 12px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.selected-numbers h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.selected-numbers ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.selected-numbers li {
+    margin: 5px 0;
+    font-size: 16px;
+}
