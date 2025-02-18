@@ -5,20 +5,20 @@ import MoneyButtons from "./components/MoneyButtons";
 import SelectedNumbers from "./components/SelectedNumbers";
 
 import "./App.css";
-import videoFile from "./lottery-background.mp4"; // Update with the correct path
+import videoFile from "./lottery-background.mp4";
 
 function App() {
   const [selectedNumbers, setSelectedNumbers] = useState([]);
   const [totalMoney, setTotalMoney] = useState(0);
 
-  // Handle number selection
+  // Handling number selection
   const handleNumberClick = (number) => {
     if (selectedNumbers.includes(number)) {
-      // Unselect number
+      // Unselecting number
       setSelectedNumbers(selectedNumbers.filter((num) => num !== number));
     } else {
       if (selectedNumbers.length < 5) {
-        // Select number
+        // Selecting number
         setSelectedNumbers([...selectedNumbers, number]);
       } else {
         alert("You can only select 5 numbers!");
@@ -44,7 +44,7 @@ function App() {
   // Handling random action
   const handleRandom = () => {
     const randomNumbers = [];
-    while (randomNumbers.length < 5) {
+    while (randomNumbers.length < 6) {
       const randomNum = Math.floor(Math.random() * 20) + 1;
       if (!randomNumbers.includes(randomNum)) {
         randomNumbers.push(randomNum);
